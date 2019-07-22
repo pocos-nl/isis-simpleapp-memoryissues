@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SimpleApp" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.apache.isis.WebServer" />
+    <module name="simpleapp-webapp" />
+    <option name="PROGRAM_PARAMETERS" value="-m domainapp.application.manifest.DomainAppAppManifestWithFixtures -p 7070 --type SERVER_PROTOTYPE" />
+    <option name="VM_PARAMETERS" value="-Xmx200m -XX:+UseG1GC -XX:+UseStringDeduplication " />
+    <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/module-simple/pom.xml" goal="datanucleus:enhance" />
+    </method>
+  </configuration>
+</component>
