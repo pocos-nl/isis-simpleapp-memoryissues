@@ -12,59 +12,6 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-        <collectionProp name="Arguments.arguments">
-          <elementProp name="DATAPATH" elementType="Argument">
-            <stringProp name="Argument.name">DATAPATH</stringProp>
-            <stringProp name="Argument.value">/home/leandro/work/jmeter/</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="hostname.test3" elementType="Argument">
-            <stringProp name="Argument.name">hostname.test3</stringProp>
-            <stringProp name="Argument.value">test3.pulse.office.pocos.nl/pulse/</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">http 80 /pulse</stringProp>
-          </elementProp>
-          <elementProp name="hostname.local" elementType="Argument">
-            <stringProp name="Argument.name">hostname.local</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">http 8080</stringProp>
-          </elementProp>
-          <elementProp name="WEBSERVER" elementType="Argument">
-            <stringProp name="Argument.name">WEBSERVER</stringProp>
-            <stringProp name="Argument.value">test3.pulse.office.pocos.nl</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">hostname</stringProp>
-          </elementProp>
-          <elementProp name="WEBSERVER_PROTOCOL" elementType="Argument">
-            <stringProp name="Argument.name">WEBSERVER_PROTOCOL</stringProp>
-            <stringProp name="Argument.value">https</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="WEBSERVER_PORT" elementType="Argument">
-            <stringProp name="Argument.name">WEBSERVER_PORT</stringProp>
-            <stringProp name="Argument.value"></stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="WEBSERVER_PATHPREFIX" elementType="Argument">
-            <stringProp name="Argument.name">WEBSERVER_PATHPREFIX</stringProp>
-            <stringProp name="Argument.value">/portal</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="USERS" elementType="Argument">
-            <stringProp name="Argument.name">USERS</stringProp>
-            <stringProp name="Argument.value">users.csv</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="RESULTSPATH" elementType="Argument">
-            <stringProp name="Argument.name">RESULTSPATH</stringProp>
-            <stringProp name="Argument.value">/home/leandro/work/jmeter/testruns</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-        </collectionProp>
-      </Arguments>
-      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group GET" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -144,7 +91,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">${RESULTSPATH}/results.tree.GetRequest.txt</stringProp>
+        <stringProp name="filename">results.tree.GetRequest.txt</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
